@@ -7,6 +7,9 @@
 
 [node name="Player" parent="." instance=ExtResource("1_srt12")]
 position = Vector2(100, 85)
+speed = 400
 
 [node name="Enemy" parent="." instance=ExtResource("2_j78hf")]
 position = Vector2(870, 396)
+
+[connection signal="body_entered" from="Player" to="Player" method="_on_body_entered"]
