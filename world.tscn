@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bl70lbdhv430d"]
+[gd_scene load_steps=5 format=3 uid="uid://bl70lbdhv430d"]
 
 [ext_resource type="PackedScene" uid="uid://dpr41mj0ee384" path="res://player.tscn" id="1_srt12"]
 [ext_resource type="PackedScene" uid="uid://b4obwuivoqo34" path="res://enemy.tscn" id="2_j78hf"]
+[ext_resource type="AudioStream" uid="uid://dijlc3v6i0or3" path="res://bg_music.mp3" id="3_o80uy"]
+[ext_resource type="AudioStream" uid="uid://25h8317w24nw" path="res://enemy_hit.mp3" id="4_38krg"]
 
 [node name="World" type="Node2D"]
 
@@ -11,5 +13,14 @@ speed = 400
 
 [node name="Enemy" parent="." instance=ExtResource("2_j78hf")]
 position = Vector2(870, 396)
+
+[node name="BGmusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_o80uy")
+volume_db = -0.99
+pitch_scale = 0.7
+autoplay = true
+
+[node name="EnemyHit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_38krg")
 
 [connection signal="body_entered" from="Player" to="Player" method="_on_body_entered"]
