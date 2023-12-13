@@ -1,9 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702423273
+::res://::1702498644
 bg_music.mp3::AudioStreamMP3::7740025162993226110::1702422765::1702422765::1::::<><>::
 enemy.png::CompressedTexture2D::5591272491634969294::1702422765::1702422765::1::::<><>::
 enemy_hit.mp3::AudioStreamMP3::1957515573300041468::1702422765::1702422765::1::::<><>::
 icon.svg::CompressedTexture2D::7653978998285427738::1702422765::1702422765::1::::<><>::
-player.tscn::PackedScene::8248996996225423023::1702423172::0::1::::<><>::uid://dhbv6eyh45c07
+player.gd::GDScript::-1::1702424963::0::1::::<>Area2D<>::
+player.tscn::PackedScene::8248996996225423023::1702424971::0::1::::<><>::res://player.gd<>uid://dhbv6eyh45c07::::res://icon.svg
 README.md::TextFile::-1::1702422765::0::1::::<><>::
-world.tscn::PackedScene::3226095677898533021::1702422765::0::1::::<><>::
+world.tscn::PackedScene::3226095677898533021::1702424965::0::1::::<><>::uid://dpr41mj0ee384::::res://player.tscn
